@@ -1,0 +1,133 @@
+/* Container layout and general aesthetics */
+.gacha-container {
+  padding: 30px;
+  font-family: monospace;
+  max-width: 700px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.gacha-title {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffaa00;
+}
+
+/* Capacity Metrics & Progress Bar */
+.weight-dashboard {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.weight-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress-track {
+  background-color: #444;
+  width: 100%;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.2s ease;
+}
+
+/* Conditional weight meter state classes */
+.fill-safe { background-color: #00ff00; }
+.fill-warning { background-color: #ffaa00; }
+.fill-danger { background-color: #ff4444; }
+
+/* Control Buttons layout */
+.control-panel {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-roll {
+  flex: 2;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #ffaa00;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-clear {
+  flex: 1;
+  padding: 15px;
+  background-color: #444;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Alert Notification Banner */
+.status-banner {
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #222;
+}
+
+.status-error {
+  background-color: #4a1111;
+  border: 2px solid #ff4444;
+  color: #ff4444;
+}
+
+/* Item List Container */
+.stash-list {
+  display: grid;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.empty-message {
+  color: #666;
+  text-align: center;
+}
+
+.loot-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #262626;
+  border-radius: 6px;
+}
+
+.item-meta {
+  margin-left: 10px;
+  color: #888;
+  font-size: 12px;
+}
+
+.item-weight {
+  color: #aaa;
+}
+
+/* 💎 Dynamic Game Rarity Color Configurations */
+.rarity-Common { border-left: 5px solid #ffffff; color: #ffffff; }
+.rarity-Uncommon { border-left: 5px solid #1eff00; color: #1eff00; }
+.rarity-Rare { border-left: 5px solid #0070dd; color: #0070dd; }
+.rarity-Legendary { border-left: 5px solid #ff8000; color: #ff8000; text-shadow: 0 0 5px rgba(255,128,0,0.4); }
